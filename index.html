@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dc32343db2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Judiologo3.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav> 
+            <div class="header-text">
+                <p>WEB DESIGNER</p>
+                <h1>Hi, I'm <span>Judith</span><br>from Nigeria</h1>
+
+            </div>
+        </div>
+        
+    </div>
+    <!-- ---------------------about-------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I'm Igboabuchukwu Onyebuchi, an emerging web designer passionate about creating visually appealing and well-functioning websites. Recently graduated in Computer Science, I'm eager to apply my theoretical knowledge and hands-on experience in vibrant IT environments. My academic background, along with internships and personal projects, has provided me with a strong foundation in software development (HTML, CSS, and JavaScript), system administration, and problem-solving. This equips me to turn your vision into reality. I enjoy learning and value feedback as I embark on this exciting journey. If you're looking for a committed and enthusiastic collaborator ready for new challenges, let's connect and bring your online vision to life!</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link active-tab" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links active-tab" onclick="opentab('experience')">Experience</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><i class="fa-brands fa-html5"></i> <span>HTML</span><br></li>
+                                <li><i class="fa-brands fa-css3"></i> <span>CSS</span><br></li>
+                                <li><i class="fa-brands fa-js"></i> <span>JavaScript</span><br></li>
+                                <li><i class="fa-brands fa-react"></i> <span>React</span><br></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2023 - Current</span><br>Full-stack training at Udemy</li>
+                                <li><span>2021 - 2022</span><br>IT support Assistant at EFAB properties</li>
+                                <li><span>2019 - 2020</span><br>Internship at Multichoice</li>
+                    </ul>
+                        </div>
+                    
+                
+                        </div>
+                        
+                </div>
+
+            </div>
+
+        </div>
+<!---------------------services-------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1> 
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Showcasing my expertise in crafting visually stunning and user-friendly websites. 
+                    I'm passionate about creating designs that not only look sleek and professional but
+                     also provide a seamless browsing experience. 
+                </p>
+            <a href="#">Learn More</a>
+                </div>
+            <div>
+                <i class="fa-solid fa-palette"></i>
+                <h2>Logo Design</h2>
+                <p>Creating awesome logos that truly represent a brand's identity, designing unique and 
+                    eye-catching logos that leave a lasting impression.
+                     Let's collaborate and bring your brand to life with a logo that stands out from the crowd!</p>
+                    <a href="#">Learn More</a>
+                </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Web Management</h2>
+                <p>Offering comprehensive services to ensure that your website runs smoothly and efficiently.
+                     From regular updates to performance optimization and security maintenance. 
+                    Sit back, relax, and let me take care of your website while you focus on what you do best.</p>
+                    <a href="#">Learn More</a>
+                </div>
+        </div>
+    </div>
+    </div>
+    <!-- ---------Portfolio--------------- -->
+    <div id="portfolio">
+        <div class="container">
+                <h1 class="sub-title">My Work</h1>  
+                    <div class="worklist">
+                        <div class="work">
+                            <img src="images/work-3.png">
+                            <div class="layer">
+                                <h2>Landing page</h2>
+                                <a href="https://startupadvertlandingpage.netlify.app"><i class="fa-solid fa-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="work">
+                        <img src="images/Portfolio-Desk-768x508.jpg">
+                        <div class="layer">
+                            <h2>Portfolio</h2> 
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/weather.jpg">
+                        <div class="layer">
+                            <h2>Weather App</h2>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work hidden">
+                        <img src="images/calculator.jpg">
+                        <div class="layer">
+                            <h2>Calculator</h2>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                
+                </div>  
+            </div>
+            <button class="btn" id="toggleBtn" onclick="toggleMoreLess()">See more</button>
+        </div>
+
+
+
+
+    <!-- --------------------------------Contacts--------------------------------------------- -->
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> judithonyebuchi23@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +2348152867272</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/judith.onyebuchi.10/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/bu.chi_/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/onyebuchi-igboabuchukwu-96b243229/ "><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/buchyjudy"><i class="fa-brands fa-square-x-twitter"></i></a>
+                </div>
+                <a href="Onyebuchi-IgboabuchukwuCV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" id="nameInput" placeholder="Name" required autocomplete="name">
+                    <input type="email" name="Email" id="Email" placeholder="Email" required>
+                    <textarea name="Message" rows="6" placeholder="Message" ></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2023 Judio <i class="fa-solid fa-heart"></i> All rights reserved.</p> 
+    </div>
+   </div>
+   <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){  
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwtTJ51Ud8mzhnCyrMKcK4Q4VZY7FRDFwsXldFWH6xaEY_QA-wgJfmvjhhZDa_6nq2BxQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  
+  <script>
+    function toggleMoreLess() {
+        const hiddenWorks = document.querySelectorAll('.work.hidden');
+        const toggleBtn = document.getElementById('toggleBtn');
+
+        // Toggle the visibility of hidden works
+        hiddenWorks.forEach((work) => {
+            work.classList.toggle('visible');
+        });
+
+        // Change button text based on visibility
+        if (toggleBtn.innerText === 'See more') {
+            toggleBtn.innerText = 'See less';
+        } else {
+            toggleBtn.innerText = 'See more';
+        }
+    }
+</script>
+</body>
+</html>
