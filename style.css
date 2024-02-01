@@ -338,15 +338,16 @@ nav .fas{
 @media only screen and (max-width: 600px){
     #header{
         background-image: url(images/BG2.phone.jpg);
-    
+        
     }
  
     .header-text{
         margin-top: 100%;
         font-size: 20px;
     }
+    
     #about {
-        padding: 5px 0;
+        padding: 10px 0;
         color: #ababab;
         text-align: justify;
     }
