@@ -44,11 +44,3 @@ This repository contains the source code for a portfolio website designed to sho
 
 - The website design and code were created by [Judith O. Igboabuchukwu](https://github.com/Onyebuchijudith).
 - The background images used in the website are sourced from [Unsplash](https://unsplash.com/).
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-Feel free to customize and enhance the website according to your preferences and requirements. If you have any questions or suggestions, please feel free to reach out!
